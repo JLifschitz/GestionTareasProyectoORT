@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Stylesheet" href="Style.css">
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Crear proyecto</h1>
+    <input type="text" id="inputNombreProyecto" placeholder="Nombre del proyecto">
+    <input type="text" id="inputDescripcionProyecto" placeholder="Descripcion del proyecto">
+    <button onclick="agregarProyecto()">Agregar Proyecto</button>
+    <br>
+
+    <h1>Crear tarea</h1>
+    <input type="text" id="inputDescripcionTarea" placeholder="Descripcion de la tarea">
+    <input type="date" id="inputVencimientoTarea" placeholder="vencimiento tarea">
+    <select id="select"></select>
+    <button onclick="agregarTarea()">Agregar tarea</button>
+    <br>
+
+    <h1>Mostrar tareas de un proyecto</h1>
+    <select id="selectProyecto"></select>
+    <button onclick="mostrarTareasProyecto()">Mostrar las tareas</button>
+    <div>
+        <ul id="contenedorTareas"></ul>
+    </div>
+    <br>
+
+    <h1>Mostrar tareas por fecha de vencimiento</h1>
+    <input type="date" id="tareaFecha">
+    <button onclick="mostrarTareasPorFecha()">Mostrar las tareas</button>
+    <div>
+        <ul id="tareasPorFecha"></ul>
+    </div>
+</body>
+</html>

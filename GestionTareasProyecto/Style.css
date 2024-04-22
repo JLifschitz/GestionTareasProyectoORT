@@ -1,0 +1,16 @@
+body
+{
+    background-color:rgba(221, 137, 41, 0.705);
+}
+
+ul
+{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+li
+{
+    display: flex;
+    flex-flow: row wrap;
+}
